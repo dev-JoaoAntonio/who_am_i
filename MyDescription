@@ -1,40 +1,47 @@
-while True:
-  Hi!👋 I'm dev_JoãoAntônio, it's a pleasure to meet you! Well, if you're here you're problably wondering who am i, am i right? So, first of all, what do i know?
-   if question == 'myPYTHONstory':
-       print('Starting of with the basics, i've learned how to code python at the start of 2021, being just a curious man wanting to know the world of programming and here
-          i am right now, with a big knowledge of this incredible language, that with the right person, without wanting to be arrogant, it's me🤣. Just kidding! maybe
-          not.. Well, currently on the college, doing computer science with more than 120 hours dedicated to python, coding bots, data storage, Chating interations in 
-          editor, data management, etc... Loving creating things it's not for everyone, and that's what i love to do! It's not a coincidence my choice of work. Being 
-          productive and optimizing my time it's two of my quality's, once my previous jobs was as a freelancer, doing graphic design jobs, making my whole day
-          revolve around this job! So i have a lot to give, if you want to offer me a job, feel free to contact me!')
-   elif question == 'myHTMLstory':
-     print("""<!DOCTYPE html>
-     <html lang="en">
-     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <titlemMyHTMLstory</title>
-     </head>
-     <body>
-        <div>
-          <h1 class='myHTMLstory'>
-            Now, with HTML.. It all starts in one summer, in one special summer, the one that i've started my journey as a programmer and a software developer, the
-            one that gave me the special love for the actual programming, regardless the fact that HTML in not an actual language, it gave me the feeling of typing
-            and seeing all my hard work actually working and getting prettier with CSS. And talking about that incredible tool, let's talk about it!
-          </h1>  
-      </div>
-    </body>
-    </html>""")
-    
-   else:
-      print(""".myCSSstory{
-        font-family: Starting with HTML, kinda obvious because, you know, HTML the actual code, so to know the principles of design of websites, you have to start 
-        learning CSS, and after on you gotta know JavaScript, but let's go with the CSS text. Like i said, i've worked before with graphic design so working with
-        CSS was a big pleasure.
-      }
-  break
-      
-def JavaScript(2023):
-    print(f'JavaStory{Coming Soon}')
-    ...  
+class JoaoAntonio(SoftwareEngineer):
+    def __init__(self):
+        self.name = "João Antônio Alves"
+        self.role = "Full Stack Software Engineer"
+        self.location = "Goiânia, Brazil (GMT-3)"
+        self.languages = ["JavaScript", "Python", "SQL", "HTML/CSS"]
+        self.tools = ["Node.js", "Highcharts", "Docker", "Git"]
+        
+    def introduction(self):
+        """
+        Welcome to my profile!
+        I am a developer driven by innovation and autonomy.
+        Currently working at the Department of Innovations @ Court of Auditors (TCM-GO),
+        building scalable architectures and data-heavy solutions.
+        """
+        
+    def my_journey(self, topic):
+        if topic == 'PYTHON':
+            return """
+            It started in 2021 with curiosity, but today it's about performance.
+            With certifications like CS50P (Harvard) under my belt, I use Python 
+            for backend logic, data analysis, and automation. I've moved far beyond 
+            basic scripts to building robust tools that solve real problems.
+            """
+            
+        elif topic == 'JAVASCRIPT_NODE':
+            return """
+            This is my main powerhouse now. I specialize in architecting end-to-end 
+            solutions using Node.js. Whether it's building complex APIs or 
+            rendering high-performance dashboards with Highcharts, I ensure 
+            the code is clean, maintainable, and scalable.
+            """
+            
+        elif topic == 'INNOVATION':
+            return """
+            I don't just code; I solve problems. I am an Honored Recipient of the 
+            Fapeg Public Call for Innovation, winning a competitive grant to 
+            develop high-impact technology. I treat every project with this same 
+            'owner mindset'.
+            """
+
+    def contact_me(self):
+        print("Open to remote opportunities and interesting projects!")
+        print("📧 joaoaqueiroz.dev@gmail.com")
+
+me = JoaoAntonio()
+me.introduction()
